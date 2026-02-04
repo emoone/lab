@@ -1,7 +1,7 @@
 <script lang="ts">
   const basicInfo = [
     { label: '이름', value: '이문' },
-    { label: '연락처', value: '010-2170-3990' },
+    { label: '연락처', value: '010-이하나칠공-삼구구영' },
     { label: '이메일', value: 'lw8610@naver.com' },
     { label: 'GitHub', value: '(GitHub URL)' },
   ];

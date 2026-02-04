@@ -1,16 +1,30 @@
 <!doctype html>
 
 <html lang="%paraglide.lang%">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%sveltekit.assets%/favicon.svg" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    %sveltekit.head%
-  </head>
+  <!-- 기본 SEO (페이지에서 덮어쓸 수 있음) -->
+  <title>Moon's Lab</title>
+  <meta name="description" content="Frontend Developer Portfolio" />
+  <meta name="author" content="Your Name" />
 
-  <body data-sveltekit-preload-data="hover">
-    <div style="display: contents">%sveltekit.body%</div>
-  </body>
+  <!-- Open Graph 기본값 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Lab" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#ffffff" />
+
+  %sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+  <div style="display: contents">%sveltekit.body%</div>
+</body>
+
 </html>
