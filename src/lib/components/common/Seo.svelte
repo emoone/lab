@@ -18,11 +18,15 @@
   }: Props = $props();
 
   const siteName = 'Lab';
-  const siteUrl = 'https://your-domain.vercel.app';
+  const siteUrl = 'https://lab-kappa-nine.vercel.app/';
 
-  const fullTitle = title === siteName ? title : `${title} | ${siteName}`;
-  const canonicalUrl = `${siteUrl}${page.url.pathname}`;
-  const imageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
+  const fullTitle = $derived(
+    title === siteName ? title : `${title} | ${siteName}`,
+  );
+  const canonicalUrl = $derived(`${siteUrl}${page.url.pathname}`);
+  const imageUrl = $derived(
+    image.startsWith('http') ? image : `${siteUrl}${image}`,
+  );
 </script>
 
 <svelte:head>
