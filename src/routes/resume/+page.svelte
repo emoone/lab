@@ -1,6 +1,6 @@
 <script lang="ts">
   import { Seo } from '$lib/components/common';
-  import { Resume } from '$lib/components/resume';
+  import { Resume } from '$lib/components/page/resume';
 </script>
 
 <Seo
