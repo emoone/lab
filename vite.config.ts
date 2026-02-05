@@ -15,6 +15,10 @@ export default defineConfig({
       outdir: './src/lib/paraglide',
     }),
   ],
+  // 레거시 브라우저 지원 - build.target으로 설정
+  build: {
+    target: ['es2020', 'chrome70', 'safari12', 'firefox70'],
+  },
   test: {
     expect: { requireAssertions: true },
     projects: [

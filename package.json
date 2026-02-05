@@ -55,6 +55,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "@tailwindcss/vite": "^4.1.18",
     "@types/node": "^20",
+    "@vitejs/plugin-legacy": "^7.2.1",
     "@vitest/browser-playwright": "^4.0.18",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
@@ -67,6 +68,7 @@
     "prettier-plugin-svelte": "^3.4.1",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "publint": "^0.3.17",
+    "regenerator-runtime": "^0.14.1",
     "svelte": "^5.48.2",
     "svelte-check": "^4.3.5",
     "tailwindcss": "^4.1.18",
@@ -79,5 +81,13 @@
   },
   "keywords": [
     "svelte"
-  ]
+  ],
+  "dependencies": {
+    "@tanstack/svelte-query": "^6.0.18",
+    "bits-ui": "^2.15.5",
+    "formsnap": "^2.0.1",
+    "motion": "^12.31.0",
+    "sveltekit-superforms": "^2.29.1",
+    "zod": "^4.3.6"
+  }
 }

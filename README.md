@@ -3,11 +3,13 @@
 다양한 기술을 실험하고 학습하는 공간입니다.
 
 **Status**: 🔄 In Progress  
-**Last Updated**: 2026-02-04
+**Last Updated**: 2026-02-05
 
 ---
 
 ## Tech Stack
+
+### Core
 
 <div align="start">
 
@@ -21,6 +23,16 @@
 
 </div>
 
+### Libraries
+
+| 카테고리       | 라이브러리            | 설명              |
+| -------------- | --------------------- | ----------------- |
+| **UI**         | Bits UI               | 헤드리스 컴포넌트 |
+| **Form**       | Superforms + Formsnap | 폼 상태관리 + UI  |
+| **Validation** | Zod                   | 스키마 검증       |
+| **Animation**  | Motion One            | 애니메이션        |
+| **i18n**       | Paraglide             | 다국어 지원       |
+
 ---
 
 ## 빠른 시작
@@ -33,7 +45,7 @@ bun install
 bun run dev
 ```
 
-http://localhost:5173 에서 확인하세요.
+http://localhost:5173 에서 확인하세요
 
 ---
 
