@@ -70,26 +70,54 @@ http://localhost:5173 에서 확인하세요
 ```
 src/
 ├── lib/
-│   ├── components/         # 재사용 컴포넌트
-│   │   ├── common/         # 공통 컴포넌트 (Seo 등)
-│   │   ├── container/      # 레이아웃 컴포넌트 (Header 등)
-│   │   ├── page/           # 페이지별 컴포넌트
-│   │   └── resume/         # 이력서 컴포넌트
-│   ├── paraglide/          # i18n 자동 생성 파일
-│   ├── styles/             # 글로벌 CSS
-│   └── index.ts            # 라이브러리 엔트리
-├── routes/
-│   ├── +layout.svelte      # 전역 레이아웃
-│   ├── +page.svelte        # 홈페이지
-│   ├── resume/             # 이력서 페이지
-│   └── demo/               # 데모 페이지들
-├── app.html                # HTML 템플릿
-├── app.d.ts                # 타입 선언
-├── hooks.ts                # 클라이언트 훅 (reroute)
-└── hooks.server.ts         # 서버 훅 (paraglide)
+│   ├── entities/              # 도메인 엔티티 (타입 + Zod 스키마)
+│   ├── api/                   # 인프라 (HTTP 클라이언트)
+│   ├── usecases/              # 비즈니스 로직 (API 호출 + 검증)
+│   ├── queries/               # Svelte Query 훅 (캐싱 + 상태)
+│   ├── stores/                # 전역 상태 (Svelte 5 rune)
+│   ├── utils/                 # 유틸 함수 (포맷팅 등)
+│   ├── components/            # UI 컴포넌트
+│   │   ├── ui/                #   범용 (Button, Card, Modal)
+│   │   ├── common/            #   공통 (Seo, Toast)
+│   │   ├── container/         #   레이아웃 (Header, Footer)
+│   │   └── page/              #   페이지별 컴포넌트
+│   ├── paraglide/             # i18n 자동 생성 파일
+│   └── styles/                # CSS
+├── routes/                    # 라우팅 (얇게 유지)
+│   ├── +layout.svelte         #   전역 레이아웃
+│   ├── +page.svelte           #   홈페이지
+│   ├── resume/                #   이력서 페이지
+│   └── demo/                  #   데모 페이지들
+├── app.html                   # HTML 템플릿
+├── app.d.ts                   # 타입 선언
+├── hooks.ts                   # 클라이언트 훅 (reroute)
+└── hooks.server.ts            # 서버 훅 (paraglide)
 static/
-└── favicon.svg             # 정적 파일
+└── favicon.svg                # 정적 파일
 ```
+
+### 아키텍처 레이어
+
+```
+routes (+page.svelte)          ← UI 렌더링
+  │
+  ├── queries/                 ← svelte-query (캐싱, 로딩 상태)
+  │     └── usecases/          ← 비즈니스 로직 (필터, 정렬, 계산)
+  │           ├── api/         ← HTTP 통신
+  │           └── entities/    ← 타입 + Zod 검증 + 타입 변환
+  │
+  ├── stores/                  ← 전역 상태
+  └── components/              ← UI 컴포넌트
+```
+
+### 데이터 가공 규칙
+
+| 가공 종류       | 위치               | 예시                             |
+| --------------- | ------------------ | -------------------------------- |
+| **타입 변환**   | Entity (Zod)       | string → Date, snake → camel    |
+| **비즈니스 로직** | Usecase          | 필터, 정렬, 계산                 |
+| **포맷팅**      | Utils              | 날짜 포맷, 금액 콤마             |
+| **UI 파생 값**  | Component ($derived) | 합계, 카운트, 표시 여부        |
 
 ---
 
