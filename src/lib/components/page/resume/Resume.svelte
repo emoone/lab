@@ -45,27 +45,25 @@
       description:
         '일본 웹툰 플랫폼 toptoon.jp의 전체 프론트엔드를 초기 구축부터 담당. 메인/연재/뷰어/충전소/마이페이지/검색/이벤트 등 전 영역 개발 및 280건 이상의 기능 개발·개선 태스크 수행.',
       achievements: [
-        '사이트 전체 프론트엔드 초기 구축 (메인, 연재, 뷰어, 충전소, 마이페이지, 회차리스트, 검색, 이벤트, 신작, 선물함, 해시태그 등)',
+        '사이트 전체 프론트엔드 초기 구축 (메인, 연재, 뷰어, 충전소, 마이페이지 등 전 영역)',
         '소셜 로그인 5종 연동 (야후 재팬, 라인, 트위터, 구글, 애플)',
-        '성인인증 프로세스 구현: 비성인/성인 모드 토글, 비트연산 기반 작품 노출 분기',
-        '갤러리(Hギャラリー) 서비스 구축: 슬라이드 뷰, 정렬/필터, 워터마크, 뷰카운트',
-        '사이트 리뉴얼(2025~): 메인페이지, 상단/사이드 메뉴 UI/UX 전면 변경, 디자인시스템 적용',
+        '성인인증 프로세스: 비성인/성인 모드 토글, 비트연산 기반 작품 노출 분기',
+        '사이트 리뉴얼(2025~): UI/UX 전면 변경, 디자인시스템 적용',
       ],
     },
     {
       title: '다중 PG 결제 시스템',
       period: '2022.06 ~ 2024.11',
-      role: '프론트엔드 설계 및 개발',
+      role: '프론트엔드 개발',
       color: 'green',
       tags: ['React', 'TypeScript', 'PG 연동'],
       description:
         '일본/글로벌 탑툰의 결제 인프라 전체 프론트엔드 구축. 5개 PG사 연동, 카드 브랜드별 자동 라우팅, 할인 이벤트 시스템, 법률 대응까지 결제 전 영역 담당.',
       achievements: [
-        '5개 PG사 프론트엔드 연동: 엑심베이(VISA/마스터), 소프트뱅크(JCB/아멕스/다이너스), 라인페이, GMO, 페이먼트월',
-        '카드 브랜드별 PG 자동 라우팅 결제 수단 레이어 설계',
-        '충전소 UI 전면 개편: 보너스코인 뱃지, 미니결제창, 코인부족 모달 → 강제 결제창 등 전환율 향상',
+        '5개 PG사 프론트엔드 연동: 엑심베이, 소프트뱅크, 라인페이, GMO, 페이먼트월',
+        '카드 브랜드별 PG 자동 라우팅 결제 수단 레이어 개발',
         '미친결제(한정 할인) 시스템: 유저 그룹별 자동 노출, 타이머, 관리자 상품 그룹 관리',
-        '일본 자금법 대응 코인 소멸(6개월) 정책 및 특정상거래법 페이지 구현',
+        '일본 자금법 대응 코인 소멸(6개월) 정책 구현',
       ],
     },
     {
@@ -81,7 +79,6 @@
         '양면/단면(스프레드), RTL(오른쪽→왼쪽) 등 다양한 읽기 모드 지원',
         '터치/마우스 제스처 기반 네비게이션 및 핀치 줌 구현',
         'Web Animations API를 활용한 부드러운 페이지 전환 애니메이션',
-        '뷰어 내비게이션 UI/UX 지속 개선 및 이미지 failover 처리',
       ],
     },
     {
@@ -93,27 +90,23 @@
       description:
         '영상 콘텐츠 제공을 위한 커스텀 비디오 플레이어 시스템. HLS 스트리밍, 다중 소스 폴백, 인터랙티브 탐색 등을 지원.',
       achievements: [
-        'Video.js 라이브러리 기반 커스텀 비디오 플레이어 개발',
+        'Video.js 기반 커스텀 비디오 플레이어 개발',
         'HLS 스트리밍 지원 및 다중 소스 폴백 시스템 구현',
-        '더블탭/더블클릭 기반 10초 탐색(Seek) 기능 개발',
-        '키보드 단축키 지원 (재생/일시정지, 볼륨, 탐색, 전체화면)',
-        '관리자 영상 파일 업로드 기능 연동',
+        '더블탭/더블클릭 10초 탐색, 키보드 단축키 등 인터랙션 개발',
       ],
     },
     {
       title: '프로모션 및 마케팅 시스템',
       period: '2022.09 ~ 2025.06',
-      role: '프론트엔드 설계 및 개발',
+      role: '프론트엔드 개발',
       color: 'amber',
       tags: ['React', 'TypeScript', 'Lottie', 'Canvas API'],
       description:
         '유저 리텐션 및 매출 향상을 위한 다양한 프로모션 시스템 전체 프론트엔드 개발. 출석체크-룰렛, 친구초대, 투표, 기획전, 미친결제 등.',
       achievements: [
-        '출석체크/룰렛 시스템: 일일 1회 응모, Lottie 애니메이션, 관리자 확률 설정, 연속 출석 리워드, 굿즈 연동',
+        '출석체크/룰렛 시스템: Lottie 애니메이션, 관리자 확률 설정, 연속 출석 리워드, 굿즈 연동',
         '친구초대 이벤트: 초대 코드, 포인트 전환, 랭킹 시스템, 통계 대시보드',
-        '연말 인기작품 투표 프로모션: 작품 투표 화면, 종료 처리, 자동화',
-        '기획전/캠페인 시스템: 이미지형 기획전, 안내사항, 선물함 캠페인 등 반복 운영 구조',
-        '쿠폰 시스템: 파라미터 기반 자동 입력, 비로그인 진입 허용, 쿠폰 등록 플로우',
+        '연말 인기작품 투표 프로모션: 투표 화면, 종료 처리, 프로모션 자동화',
       ],
     },
     {
@@ -121,22 +114,14 @@
       period: '2023.02 ~ 현재',
       role: '프론트엔드 리드',
       color: 'slate',
-      tags: [
-        'AWS',
-        'Edgio CDN',
-        'GitHub Actions',
-        'Next.js',
-        'Dynamic Import',
-      ],
+      tags: ['AWS', 'Edgio CDN', 'GitHub Actions', 'Next.js', 'Dynamic Import'],
       description:
         '기술 부채 해소와 서비스 안정성 확보를 위한 아키텍처 개선, 인프라 이관, CI/CD 파이프라인 구축 등 기술 기반 작업 주도.',
       achievements: [
-        '전체 코드 구조 개선: 디자인 패턴 변경 및 프로세스 리팩토링 (전 페이지 풀테스트 후 라이브)',
         'Dynamic Import 전환으로 번들 분리 및 초기 로딩 퍼포먼스 개선',
         '인증 처리를 페이지별 수동 모달에서 Middleware 기반 글로벌 처리로 전환',
         'CDN 이관: Layer0 → Edgio v7 마이그레이션 (간헐적 Project Error 장애 해소)',
-        'AWS ECS(Fargate), VPC, ALB, Route53 기반 서비스 아키텍처 설계',
-        'CloudFront + S3 CDN / Lambda 이미지 리사이징 파이프라인 구축',
+        'AWS ECS(Fargate) + CloudFront/S3 CDN + Lambda 이미지 리사이징 파이프라인 구축',
         'GitHub Actions 기반 CI/CD 파이프라인으로 staging/live 배포 자동화',
         'CRA → Next.js 마이그레이션 (관리자 시스템 전면 전환)',
       ],
@@ -190,12 +175,13 @@
     <p class="leading-relaxed text-gray-700">
       웹툰/콘텐츠 플랫폼 전문 프론트엔드 개발자로서, 글로벌 및 일본 2개 리전의
       유저 서비스와 관리자 시스템(총 4개 프로젝트)을 메인으로 담당해왔습니다.
-      일본 탑툰 사이트 초기 구축부터 참여하여 메인/연재/뷰어/충전소/마이페이지 등
-      전체 서비스 프론트엔드를 개발하였으며, 다수의 PG 결제 시스템(엑심베이,
+      일본 탑툰 사이트 초기 구축부터 참여하여 메인/연재/뷰어/충전소/마이페이지
+      등 전체 서비스 프론트엔드를 개발하였으며, 다수의 PG 결제 시스템(엑심베이,
       소프트뱅크, 라인페이, GMO 등) 연동, 출석체크/룰렛/투표 등 프로모션 시스템,
       EPUB/비디오 뷰어, 성인인증/비성인 모드 분기 등 복잡한 비즈니스 로직을
-      설계·구현하였습니다. 아키텍처 전면 개선(디자인 패턴 리팩토링, Dynamic Import
-      전환), CDN 이관(Layer0 → Edgio v7) 등 기술 부채 해소 작업도 주도하였습니다.
+      설계·구현하였습니다. 아키텍처 전면 개선(디자인 패턴 리팩토링, Dynamic
+      Import 전환), CDN 이관(Layer0 → Edgio v7) 등 기술 부채 해소 작업도
+      주도하였습니다.
     </p>
   </section>
 
@@ -232,7 +218,7 @@
             프론트엔드 메인 담당 | 280+ 태스크 수행
           </p>
 
-          <p class="mb-2 mt-3 text-sm font-medium text-gray-800">
+          <p class="mt-3 mb-2 text-sm font-medium text-gray-800">
             서비스 초기 구축 (2022)
           </p>
           <ul class="list-inside list-disc space-y-1 text-gray-700">
@@ -242,17 +228,17 @@
               페이지 등 전 영역 개발
             </li>
             <li>
-              소셜 로그인 5종 연동 (야후 재팬, 라인, 트위터, 구글, 애플) 및
-              계정 연결/해제 기능 개발
+              소셜 로그인 5종 연동 (야후 재팬, 라인, 트위터, 구글, 애플) 및 계정
+              연결/해제 기능 개발
             </li>
             <li>
-              성인인증 프로세스 구현: 비성인/성인 모드 토글, 비트연산 기반
-              작품 노출 분기, 연재 UI 모드별 변경
+              성인인증 프로세스 구현: 비성인/성인 모드 토글, 비트연산 기반 작품
+              노출 분기, 연재 UI 모드별 변경
             </li>
             <li>엑솔라(Xsolla) 결제 UI 연동 및 프론트 결제 프로세스 구현</li>
           </ul>
 
-          <p class="mb-2 mt-4 text-sm font-medium text-gray-800">
+          <p class="mt-4 mb-2 text-sm font-medium text-gray-800">
             결제 시스템 고도화 (2022~2023)
           </p>
           <ul class="list-inside list-disc space-y-1 text-gray-700">
@@ -260,56 +246,51 @@
               다중 PG 연동: 엑심베이(VISA/마스터), 소프트뱅크(JCB/아멕스
               /다이너스), 라인페이, GMO 등 4개 PG사 프론트엔드 연동
             </li>
+            <li>카드 브랜드별 PG 자동 라우팅 결제 수단 레이어 설계</li>
             <li>
-              카드 브랜드별 PG 자동 라우팅 결제 수단 레이어 설계
+              충전소 UI 전면 개편: 보너스코인 뱃지, 미니결제창, 코인부족 → 강제
+              결제창 노출 등 결제 전환율 향상
             </li>
             <li>
-              충전소 UI 전면 개편: 보너스코인 뱃지, 미니결제창, 코인부족 →
-              강제 결제창 노출 등 결제 전환율 향상
-            </li>
-            <li>
-              일본 자금법 대응: 코인 유효기간(6개월) 소멸 정책, 소멸 예정
-              /공시 레이어, 약관 수정
+              일본 자금법 대응: 코인 유효기간(6개월) 소멸 정책, 소멸 예정 /공시
+              레이어, 약관 수정
             </li>
           </ul>
 
-          <p class="mb-2 mt-4 text-sm font-medium text-gray-800">
-            프로모션 및 마케팅 시스템 (2022~2025)
+          <p class="mt-4 mb-2 text-sm font-medium text-gray-800">
+            프로모션 시스템 (2022~2025)
           </p>
           <ul class="list-inside list-disc space-y-1 text-gray-700">
             <li>
-              미친결제(한정 할인) 시스템: 유저 그룹별 자동 노출, 타이머,
-              관리자 이미지 등록, 쿠키 기반 노출 제어
+              미친결제(한정 할인) 시스템: 유저 그룹별 자동 노출, 타이머, 관리자
+              상품 그룹 관리 기능 일체 개발
             </li>
             <li>
-              출석체크/룰렛: 일일 1회 응모, 관리자 확률 설정, 연속 출석
-              리워드, 굿즈 연동 지급
+              출석체크/룰렛 시스템: Lottie 애니메이션, 관리자 확률 설정, 연속
+              출석 리워드, 굿즈 연동
             </li>
             <li>
-              친구초대 이벤트: 초대 코드, 포인트 전환, 랭킹, 통계 대시보드
-            </li>
-            <li>
-              연말 인기작품 투표 프로모션 및 기획전/캠페인 운영 시스템
+              친구초대 이벤트: 초대 코드, 포인트 전환, 랭킹 시스템, 통계
+              대시보드
             </li>
           </ul>
 
-          <p class="mb-2 mt-4 text-sm font-medium text-gray-800">
+          <p class="mt-4 mb-2 text-sm font-medium text-gray-800">
             아키텍처 개선 및 성능 최적화 (2023~현재)
           </p>
           <ul class="list-inside list-disc space-y-1 text-gray-700">
             <li>
-              전체 코드 구조 개선: 디자인 패턴 변경 및 프로세스 리팩토링
+              전체 코드 구조 개선: 디자인 패턴 변경 및 프로세스 리팩토링 (전
+              페이지 풀테스트 후 라이브)
             </li>
-            <li>Dynamic Import 전환으로 번들 분리 및 초기 로딩 개선</li>
             <li>
-              인증 처리를 페이지별 모달에서 Middleware 기반 글로벌 처리로
+              Dynamic Import 전환으로 번들 분리 및 초기 로딩 퍼포먼스 개선
+            </li>
+            <li>
+              인증 처리를 페이지별 수동 모달에서 Middleware 기반 글로벌 처리로
               전환
             </li>
             <li>CDN 이관: Layer0 → Edgio v7 마이그레이션</li>
-            <li>
-              사이트 리뉴얼(2025~): 메인, 상단/사이드 메뉴 UI/UX 전면 변경,
-              디자인시스템 적용
-            </li>
           </ul>
         </div>
 
@@ -320,23 +301,14 @@
           <p class="mb-3 text-sm text-gray-600">프론트엔드 전담</p>
           <ul class="list-inside list-disc space-y-1 text-gray-700">
             <li>
-              결제상품 관리: 상품 그룹, 보너스코인 뱃지/아이콘, 필터값 유지,
-              노출 제어
-            </li>
-            <li>
-              매출 통계: 전체/결제 통계, 일별/시간별 데이터, PG사별 필터,
+              매출 통계 시스템: 전체/결제 통계, 일별/시간별 데이터, PG사별 필터,
               코인 통계 프로세스
             </li>
             <li>
-              캠페인/룰렛/투표 관리자 페이지 개발 및 운영 도구 구축
+              프로모션 운영 도구: 캠페인/룰렛/투표 관리자 페이지 개발 (확률
+              설정, 리워드 관리)
             </li>
-            <li>
-              작품 관리 고도화: 카테고리 노출 조건, 작가 분리, 계약종료 예외
-              처리
-            </li>
-            <li>
-              CRA → Next.js 전면 전환 및 디자인시스템 적용 리뉴얼 진행
-            </li>
+            <li>CRA → Next.js 전면 전환 및 디자인시스템 적용 리뉴얼 진행</li>
           </ul>
         </div>
       </div>
@@ -351,33 +323,22 @@
         </div>
 
         <div class="mb-6">
-          <h5 class="mb-2 font-medium text-gray-800">유저 서비스</h5>
+          <h5 class="mb-2 font-medium text-gray-800">
+            유저 서비스 · 관리자 시스템
+          </h5>
           <p class="mb-3 text-sm text-gray-600">프론트엔드 담당</p>
           <ul class="list-inside list-disc space-y-1 text-gray-700">
             <li>
-              CRA 기반 레거시 코드 리팩토링 및 SDK 모델 정리
+              CRA 기반 레거시 코드 리팩토링 및 SDK 모델 정리를 통한 글로벌/일본
+              공통 코드 기반 마련
             </li>
             <li>
-              PG 결제 시스템 연동: 페이먼트월(Paymentwall) 충전소/미니 결제창
-              UI
+              페이먼트월(Paymentwall) PG 연동 및 충전소/미니 결제창 UI 구현
             </li>
+            <li>유출자/의심자 차단 시스템 프론트엔드 구현</li>
             <li>
-              유출자/의심자 차단 시스템: warning 및 에러코드 페이지 개발
+              매출 통계 대시보드 개발: 일별/시간별 결제 통계 데이터 시각화
             </li>
-            <li>브랜딩 배너, 이벤트 구역, 회차리스트 개선</li>
-            <li>쿠키 동의 팝업, News Feed 게시판 등 법적 요구사항 대응</li>
-          </ul>
-        </div>
-
-        <div class="mb-6">
-          <h5 class="mb-2 font-medium text-gray-800">관리자 시스템</h5>
-          <p class="mb-3 text-sm text-gray-600">프론트엔드 담당</p>
-          <ul class="list-inside list-disc space-y-1 text-gray-700">
-            <li>
-              결제상품 관리: 상품 그룹, 아이콘/뱃지 등록, 필터값 유지
-            </li>
-            <li>매출 통계 대시보드: 일별/시간별 결제 통계, 데이터 시각화</li>
-            <li>SDK 모델 정리 및 글로벌/일본 관리자 코드 통합 기반 마련</li>
           </ul>
         </div>
       </div>
@@ -537,14 +498,18 @@
 
           <div class="mb-4 flex flex-wrap gap-1.5">
             {#each project.tags as tag}
-              <span class="rounded-full px-2.5 py-0.5 text-xs font-medium {c.badge}">
+              <span
+                class="rounded-full px-2.5 py-0.5 text-xs font-medium {c.badge}"
+              >
                 {tag}
               </span>
             {/each}
           </div>
 
           <div class="border-t border-gray-100 pt-4">
-            <p class="mb-2 text-xs font-semibold uppercase tracking-wider text-gray-500">
+            <p
+              class="mb-2 text-xs font-semibold tracking-wider text-gray-500 uppercase"
+            >
               주요 기여
             </p>
             <ul class="list-inside list-disc space-y-1 text-sm text-gray-700">
