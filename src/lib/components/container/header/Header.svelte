@@ -4,6 +4,7 @@
   const menus = [
     { label: 'Home', href: '/' },
     { label: 'Resume', href: '/resume' },
+    { label: 'Build Tools', href: '/build-tools' },
     { label: 'About', href: '/about' },
   ];
 

@@ -12,7 +12,12 @@
       href: '/demo/paraglide',
       tags: ['i18n', 'Paraglide'],
     },
-    // 새 실험 추가 시 여기에
+    {
+      title: 'Build Tools',
+      description: 'Vite, tsdown, ESBuild, Webpack, SWC, Babel 빌드 도구 비교 가이드',
+      href: '/build-tools',
+      tags: ['Vite', 'ESBuild', 'Webpack', 'SWC'],
+    },
   ];
 
   const techStack = [
